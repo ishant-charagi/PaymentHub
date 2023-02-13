@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Paypage Redirect View</title>
+    <style type="text/css">
+        * {
+            font-family: verdana, arial, sans-serif;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            height: 100%;
+            background-color: #F5F5F5;
+        }
+
+        #pageHeader {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+            font-size: 14pt;
+            font-weight: bold;
+            border-bottom: 5px solid #FAFAFA;
+            background-color: #E8E8E8;
+        }
+
+        #content {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #tbl {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #tblHeader {
+            font-weight: bold;
+        }
+
+            #tblHeader td {
+                border-bottom: 2px solid black;
+            }
+    </style>
+</head>
+<body>
+    <div id="pageHeader">Paypage Redirect View</div>
+    <div id="content">
+        @*<?php
+        $rough_data = file_get_contents("php://input");
+        //foreach ($xml as $key => $value){
+        //	$data .= $key . ': ' . $value . '<br />';
+        //}
+        //echo parse_str($rough_data);
+        $convert = explode("&", $rough_data);
+        for ($i=0;$i<count($convert);$i++){ echo $convert[$i].'<br /> ';
+			}
+			?>*@
+
+    </div>
+</body>
+</html>
+

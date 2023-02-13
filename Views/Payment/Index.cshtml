@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Payment Hub</h1>
+        <form action="https://keyexch.epxuap.com" method="POST">
+            <table>
+                <tr>
+                    <td valign="top">
+                        TRAN_NBR: <input type="text" name="TRAN_NBR" value="123" style="width: 10em;" /><br />
+                        AMOUNT: <input type="text" name="AMOUNT" value="100.00" style="width: 10em;" /><br />
+                        TRAN_GROUP: <input type="text" name="TRAN_GROUP" value="SALE" style="width: 10em;" /><br />
+                        MAC: <input type="text" name="MAC" value="2ifP9bBSu9TrjMt8EPh1rI51AR35sfus" style="width: 40em;" /><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <form action="https://paypage.epxuap.com" method="POST">
+            <table>
+                <tr>
+                    <td valign="top">
+                        CUST_NBR: <input type="text" name="CUST_NBR" value="9001" /><br />
+                        MERCH_NBR: <input type="text" name="MERCH_NBR" value="900300" /><br />
+                        DBA_NBR: <input type="text" name="DBA_NBR" value="1" /><br />
+                        TERMINAL_NBR: <input type="text" name="TERMINAL_NBR" value="24" /><br />
+                        BATCH_ID: <input type="text" name="BATCH_ID" value="20210630" /><br />
+                        TRAN_NBR: <input type="text" name="TRAN_NBR" value="123" /><br />
+                        AMOUNT: <input type="text" name="AMOUNT" value="100.00" /><br />
+                        TAC: <input type="text" name="TAC" value="" style="width: 40em;" /><br />
+                        <!--These URLs assume that you are hosting the files locally and in a folder
+                        called "payPageExample". Please replace these values with the URLs of your
+                        custom CSS, JavaScript, and redirect page.  All URLs must use HTTPS for the pay page to load properly.-->
+                        @*REDIRECT_URL:
+                        <input type="text"
+                               name="REDIRECT_URL"
+                               value="https://localhost:44328/Payment/PayPageRedirectView" /><br />
+                        CUSTOM_CSS_URL:
+                        <input type="text" name="CUSTOM_CSS_URL" value="https://localhost:44328/Content/payPage.css" /><br />
+                        CUSTOM_JAVASCRIPT_URL:
+                        <input type="text"
+                               name="CUSTOM_JAVASCRIPT_URL"
+                               value="https://localhost:44328/Scripts/defaultJS.js" /><br />*@
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
